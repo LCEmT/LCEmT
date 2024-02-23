@@ -28,6 +28,8 @@ Directly split the Huffman-coded table row by row may result in
 poor compression ratios, especially when longer codings share a
 row. To address these, we propose new coding methods.
 
+![image](https://github.com/LCEmT/LCEmT/assets/119176220/38e1b646-2aa1-4eb0-a8c1-b5246917014e)
+
 ## Methodology
 Instead of directly building the coding tree, we first decide the
 shape of the tree and then assign the characters to the tree based on
@@ -54,6 +56,8 @@ identify the globally optimal tree by enumeration. Then, we
 exhaustively compress with the second tree starting from the row
 with the smallest compression ratio until there was no further
 improvement.
+![image](https://github.com/LCEmT/LCEmT/assets/119176220/2e9c6fa8-9b23-41ae-bdae-f124cb11221e)
+
 
 ### Method 2: Simulated Annealing for 8-Bit Coding Tree
 In finding an optimal 8-bit coding tree, we approach it as an
@@ -71,6 +75,10 @@ tree and the adjusted balanced tree. Given that not all characters
 necessarily appear in the data, we can prune unnecessary leaves
 to enhance the adjusted balanced tree
 
+![image](https://github.com/LCEmT/LCEmT/assets/119176220/be4b294b-3a55-4694-90e9-77af68aca1c8)
+![image](https://github.com/LCEmT/LCEmT/assets/119176220/7f6c9764-8a5e-4a91-948d-733fda8598cb)
+
+
 ### Theoretical Limit
 To find the theoretical limit of lossless
 compression, we perform 4-bit or 8-bit
@@ -80,7 +88,10 @@ compressed result. The row with the smallest
 compression ratio stands as the theoretical
 upper limit for these 4-bit or 8-bit data.
 
+![image](https://github.com/LCEmT/LCEmT/assets/119176220/e465b912-2bd0-4407-bd9b-435b05eb9b76)
+
 ## Results
+![image](https://github.com/LCEmT/LCEmT/assets/119176220/363060e3-6dd7-41bc-a88e-0f5aae6375aa)
 
 ## Conclusion
 Our approaches achieve a compression ratio close to the
