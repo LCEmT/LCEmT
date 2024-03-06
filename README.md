@@ -1,6 +1,6 @@
 # LCEmT
-(Lossless Compression Techniques for Embedding Tables 
-in Substantial Deep Learning-Based Recommendation System)[project_poster.pdf]
+[Lossless Compression Techniques for Embedding Tables 
+in Substantial Deep Learning-Based Recommendation System](project_poster.pdf)
 
 ## Abstract
 Deep learning-based recommendation systems are popular in a variety 
